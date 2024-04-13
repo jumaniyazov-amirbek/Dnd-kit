@@ -1,23 +1,23 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
- const Input = ({ onSubmit }) => {
-  const [input, SetInput] = useState("");
-  const handleSubmit = () => {
-    if (!input) return;
-    onSubmit(input);
-    SetInput("");
-  };
+export const Input = ({addTask}) => {
+
+  const [input , setInput] = useState("") 
+
+  function addTextTask(){
+    setInput("")
+    addTask(input)
+  }
+  function changeInput(e) {
+    setInput(e.target.value)
+    console.log(e);
+  }
+
+
   return (
     <div className="continer">
-      <input
-        type="text"
-        className="input"
-        value={input}
-        onChange={(e) => SetInput(e.target.value)}
-      />
-      <button onClick={handleSubmit}></button>
+      <input type="text" className="input" value={input} onChange={(e) => changeInput(e)}/>
+      <button onClick={() => addTextTask()}>Qoshish</button>
     </div>
   );
 };
-
-export default Input

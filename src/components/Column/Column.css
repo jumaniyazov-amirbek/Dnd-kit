@@ -1,5 +1,5 @@
 .Column {
-    margin: 50px 850px;
+  margin: 50px 850px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,10 +14,27 @@
   height: 100%;
 }
 .divv {
+
   background-color: rgb(110, 110, 110);
   color: #fff;
   padding: 15px;
   border-radius: 5px;
-  flex-direction: column;
   width: 80%;
+  touch-action: none;
+}
+
+
+
+.tasks {
+  display: flex ;
+  flex-direction: column;
+  justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.all{
+  width: 500px;
+  padding: 40px;
+  background: rgba(128, 128, 128, 0.233);
 }
