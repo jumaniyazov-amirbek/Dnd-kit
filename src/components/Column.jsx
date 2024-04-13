@@ -1,9 +1,8 @@
-import { Task } from "../Task/Task";
-import "../components/Column.css";
-
+import "./Column.css";
+import {Task} from './Task/Task'
 import {
   SortableContext,
-  VerticalListSortingStrategy
+  verticalListSortingStrategy,
 } from "@dnd-kit/sortable";
 
 export const Column = ({ tasks }) => {
@@ -11,11 +10,9 @@ export const Column = ({ tasks }) => {
     <div className="all">
       <div className="Column-all">
         <div className="Column">
-          <SortableContext items={tasks} strategy=
-          {VerticalListSortingStrategy}>
+          <SortableContext items={tasks} strategy={verticalListSortingStrategy}>
             {tasks.map((task) => (
-              <Task id={task.id} title={task.title} key=
-              {task.id} />
+              <Task id={task.id} title={task.title} key={task.id} />
             ))}
           </SortableContext>
         </div>
