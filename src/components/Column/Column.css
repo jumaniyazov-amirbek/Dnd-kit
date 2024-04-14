@@ -1,3 +1,10 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: sans-serif;
+}
 .Column {
   margin: 50px 850px;
   display: flex;
@@ -14,17 +21,18 @@
   height: 100%;
 }
 .divv {
-
   background-color: rgb(110, 110, 110);
   color: #fff;
-  padding: 15px;
+ height: 50px;
+ padding: 0 40px 0 5px;
   border-radius: 5px;
   width: 80%;
   touch-action: none;
 }
-
-
-
+.h1{
+  text-align: center;
+  font-family: sans-serif;
+}
 .tasks {
   display: flex ;
   flex-direction: column;
@@ -34,7 +42,31 @@
 }
 
 .all{
-  width: 500px;
-  padding: 40px;
+  width: 400px;
+  padding: 20px 0 20px 30px;
   background: rgba(128, 128, 128, 0.233);
+  border-radius: 10px;
+}
+.input {
+  width: 250px;
+  height: 30px;
+margin: 20px;
+background-color: rgb(110, 110, 110);
+color: #fff;
+transition: all 0.5s;
+}
+.input:hover{
+  background-color: #fff;
+color: rgb(110, 110, 110);
+}
+.continer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.continer button{
+  width: 100px;
+  border: 2px solid rgb(110, 110, 110);
+  background-color: #979797;
+  border-radius: 5px;
 }

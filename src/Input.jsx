@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import add from './svg/LogoToAdd.svg'
 export const Input = ({addTask}) => {
 
   const [input , setInput] = useState("") 
@@ -8,6 +8,7 @@ export const Input = ({addTask}) => {
     setInput("")
     addTask(input)
   }
+  
   function changeInput(e) {
     setInput(e.target.value)
     console.log(e);
@@ -17,7 +18,7 @@ export const Input = ({addTask}) => {
   return (
     <div className="continer">
       <input type="text" className="input" value={input} onChange={(e) => changeInput(e)}/>
-      <button onClick={() => addTextTask()}>Qoshish</button>
+      <button onClick={() => addTextTask()}>  <img src={add} alt="" /> </button>
     </div>
   );
 };

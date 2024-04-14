@@ -17,15 +17,15 @@ function App() {
     [
     {
       id: 1,
-      title: "Salom Mening ismim Alibek",
+      title: "Lorem ipsum dolor sit amet.",
     },
     {
       id: 2,
-      title: "Salom Mening ismim Amirbek",
+      title: "Lorem ipsum dolor sit amet consectetur.",
     },
     {
       id: 3,
-      title: "Salom Mening ismim Zafar",
+      title: "Lorem ipsum dolor sit.",
     },
   ]
 );
@@ -65,7 +65,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Dnd kit</h1>
+      <h1 className="h1">Dnd kit</h1>
       <DndContext
         sensors={sensors}
         onDragEnd={handleDragEnd}
